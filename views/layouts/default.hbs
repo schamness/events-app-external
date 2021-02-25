@@ -49,7 +49,12 @@
 <div class="jumbotron">
         <div class="container">
           <h1 class="display-3">Welcome to NCD - Not Currently Drinking</h1>
-            <p> Test making a change</p>
+          <h2>It is <span id="datetime" style="color:mediumaquamarine;"></span> - bottom's up! </h2> <font style="font-size: 50px">🍻</font>
+          <p></p>
+          <script>
+            var dt = new Date();
+            document.getElementById("datetime").innerHTML = dt.toLocaleTimeString();
+          </script>
           <p>This is an app for all your go-to events!</p>
           <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
         </div>
