@@ -4,7 +4,7 @@
 <head>
   <meta charset="utf-8" />
   <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-  <title>Team [TEAM NAME] Website</title>
+  <title>Team Currently Not Drinking's Website</title>
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
@@ -49,6 +49,7 @@
 <div class="jumbotron">
         <div class="container">
           <h1 class="display-3">Welcome to NCD - Not Currently Drinking</h1>
+            <p> Test making a change</p>
           <p>This is an app for all your go-to events!</p>
           <p><a class="btn btn-primary btn-lg" href="#" role="button">Learn more »</a></p>
         </div>
@@ -62,9 +63,17 @@
 <div class="container">
   <h2>Add An Event</h2>
     <form action="/event" method="post">
-       Title: <input name="title" type="text" /> <br />
-       Description: <input name="description" type="text" /> <br />
-       <br />
+        <table>
+            <tr>
+                <td align="right">Event Name:</td>
+                <td align="left">
+                    <input name="title" type="text" /></td>
+            </tr>
+            <tr>
+                <td align="right">Description:</td>
+                <td align="left"><input type="text" name="description" /></td>
+            </tr>
+        </table>
         <input type="submit" name="submit" value="submit" />
     </form>
   </div>
