@@ -70,18 +70,15 @@
 <div class="container">
   <h2>Add An Event</h2>
     <form action="/event" method="post">
-        <table>
-            <tr>
-                <td align="right">Event Name:</td>
-                <td align="left">
-                    <input name="title" type="text" /></td>
-            </tr>
-            <tr>
-                <td align="right">Description:</td>
-                <td align="left"><input type="text" name="description" /></td>
-            </tr>
-        </table>
-        <input type="submit" name="submit" value="submit" />
+    <div class="form-group">
+        <label>Event Name</label><br>
+        <input class="form-control" name="title" type="text" /><br>
+    </div>        
+    <div class="form-group">
+        <label>Description</label><br>
+        <input class="form-control" type="text" name="description" /><br>
+    </div>
+        <input class="btn btn-primary" type="submit" name="submit" value="Submit" />
     </form>
   </div>
 </body>
