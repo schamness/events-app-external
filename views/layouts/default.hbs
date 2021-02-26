@@ -8,6 +8,18 @@
   <meta name="HandheldFriendly" content="True" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover" />
   <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <script type="text/javascript"> 
+    function display_c(){
+    var refresh=1000; // Refresh rate in milli seconds
+    mytime=setTimeout('display_ct()',refresh)
+    }
+
+    function display_ct() {
+    var x = new Date()
+    document.getElementById('ct').innerHTML = x;
+    display_c();
+    }
+    </script>   
 </head>
 
 <body>
@@ -49,9 +61,8 @@
 <div class="jumbotron">
         <div class="container">
           <h1 class="display-3">Welcome to NCD - Not Currently Drinking</h1>
-          <h2>Jenkins Works</h2>
-          <h3>Versioning Control Check</h3>
-          <h2>It is <span id="datetime" style="color:mediumaquamarine;"></span> - bottom's up! </h2> <font style="font-size: 50px">🍻</font>
+          <body onload=display_ct();>
+          <h2>It is <span id="ct" style="color:mediumaquamarine;"></span> - bottom's up! </h2> <font style="font-size: 50px">🍻</font>
           <p></p>
           <script>
             var dt = new Date();
